@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randomized Buttons</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #buttons-container {
+      text-align: center;
+    }
+
+    #hidden-button {
+      background: transparent;
+      border: none;
+      color: transparent;
+      width: 80px;
+      height: 80px;
+      position: fixed;
+      top: 10%;
+      right: 5%;
+    }
+
+    button {
+      margin: 5px;
+    }
+  </style>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable F12
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.key === 'i')) {
+        e.preventDefault();
+      }
+    });
+
+    // Disable Tab
+    document.addEventListener('keydown', function(e) {
+      if (e.keyCode === 9) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+
+<script>
+  
+  // Function to play a beeping sound
+  function playOnSound() {
+    var audio = new Audio('Bruh.wav'); // Replace 'beep.mp3' with the actual path to your sound file
+    audio.play();
+  }
+
+</script>
+<div id="buttons-container">
+<h1>당신이 생일선물을 받을 확률은 단 10%!</h1>
+<h5>하지만 눈 감고도 받을 수 있다구?!</h5>
+<h6>10%가 맞나?</h6>
+
+  <button onclick="window.open('https://youtu.be/dQw4w9WgXcQ?si=AiNA-00ommVaaX2_', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/nVmXsBNfwHY?si=Vrps7-r8Tphtb8uH', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/wDgQdr8ZkTw?si=4FEMYYpRZVmlzPLc', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/ZZ5LpwO-An4?si=MaLumAUbfNlg4NHE', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/yBLdQ1a4-JI?si=HoUEfoo3GinMY_lX', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/pCOb6Fykxz0?si=1FBKSoMLv5yaa8uf', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/6elpDm5qACk?si=Let0jyYfjHws3UrI', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/Ct6BUPvE2sM?si=ql3Yw_SN-MB_BEWU', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/4jXEuIHY9ic?si=NwwJlKmKJ1LtKtEL', '_blank')">이 버튼일까?</button>
+  <button onclick="window.open('https://youtu.be/b8HO6hba9ZE?si=lLnu118vdgiL5xIJ', '_blank')">이 버튼일까?</button>
+</div>
+
+<button id="hidden-button" onmouseover="playOnSound()" onclick="window.open('https://drive.google.com/file/d/1atb4cQoVW0onTVnrxbUcHpnW39w4GU8v/view?usp=drive_link', '_blank')"></button>
+
+</body>
+</html>
